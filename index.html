@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+    <title>CAA in adozione</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico.png">
+  </head>
+  <header class="titolo">
+    <p>CAA IN ADOZIONE</p>
+  </header>
+  <body>
+    <div class="img_div">
+      <div class="card">
+        <p class="card_title">MAMMA</p>
+        <img
+          id="mamma"
+          src="img\mamma.png"
+          class="img"
+          onclick="Start_mamma()"
+        />
+        <audio id="sound_mamma" src="sound\Mamma.mp3"></audio>
+        <p class="traduction">அம்மா<br /><br /></p>
+      </div>
+      <div class="card">
+        <p class="card_title">PAPÀ</p>
+        <img id="papa" src="img\papà.png" class="img" onclick="Start_papa()" />
+        <audio id="sound_papa" src="sound\Papà.mp3"></audio>
+        <p class="traduction">அப்பா<br /><br /></p>
+      </div>
+      <div class="card">
+        <p class="card_title">HO FAME</p>
+        <img
+          id="fame"
+          src="img\ho fame.png"
+          class="img"
+          onclick="Start_fame()"
+        />
+        <audio id="sound_fame" src="sound\Ho fame.mp3"></audio>
+        <p class="traduction">எனக்கு<br />பசிக்கிறது</p>
+      </div>
+      <div class="card">
+        <p class="card_title">HO SETE</p>
+        <img
+          id="sete"
+          src="img\ho sete.png"
+          class="img"
+          onclick="Start_sete()"
+        />
+        <audio id="sound_sete" src="sound\Ho sete.mp3"></audio>
+        <p class="traduction">எனக்கு தாகமாக<br />உள்ளது</p>
+      </div>
+      <div class="card">
+        <p class="card_title">HO SONNO</p>
+        <img
+          id="sonno"
+          src="img\sono assonnato.png"
+          class="img"
+          onclick="Start_sonno()"
+        />
+        <audio id="sound_sonno" src="sound\Ho sonno.mp3"></audio>
+        <p class="traduction">எனக்கு தூக்கம்<br />வருகிறது</p>
+      </div>
+      <div class="card">
+        <p class="card_title">DEVO FARE LA PIPÌ</p>
+        <img
+          id="pipi"
+          src="img\devo fare pipi.png"
+          class="img"
+          onclick="Start_pipi()"
+        />
+        <audio id="sound_pipi" src="sound\Devo fare la pipì.mp3"></audio>
+        <p class="traduction">நான் சிறுநீர்<br />கழிக்க வேண்டும்</p>
+      </div>
+      <div class="card">
+        <p class="card_title">DEVO FARE LA POPÒ</p>
+        <img
+          id="popo"
+          src="img\devo fare popò.png"
+          class="img"
+          onclick="Start_popo()"
+        />
+        <audio id="sound_popo" src="sound\Devo fare la popò.mp3"></audio>
+        <p class="traduction">நான் மலம்<br />கழிக்க வேண்டும்</p>
+      </div>
+      <div class="card" id="last">
+        <p class="card_title">COME MI SENTO?</p>
+        <img
+          id="feeling"
+          src="img\come mi sento.png"
+          class="img"
+          onclick="Start_feeling()"
+        />
+        <audio
+          id="sound_feeling"
+          src="sound\Come mi sento.mp3"
+        ></audio>
+        <p class="traduction">நான் எப்படி<br />உணர்கிறேன்?</p>
+      </div>
+    </div>
+  </body>
+</html>

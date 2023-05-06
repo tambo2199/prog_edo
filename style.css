@@ -1,0 +1,85 @@
+html, body{
+  overflow-x: hidden;
+}
+
+.titolo p{
+  padding: 20px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 60px;
+  color: white;
+  -webkit-text-stroke: 1px black;
+  text-shadow: rgb(0, 0, 0) 3px 3px 3px;
+}
+
+body {
+  padding: 100px 100px 0px 100px;
+  font-family: Segoe UI;
+  font-weight: bold;
+  background: #1c92d2;
+  background: #3881FF;
+  background: radial-gradient(at left top, #3881FF, #48FFE3);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img_div {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  column-gap: 50px;
+  padding-bottom: 100vh;
+  padding-left: 100px;
+  transform: scale(1.25);
+  padding-top: 230px;
+}
+
+.img {
+  padding-top: 0px;
+  width: 200px;
+  height: 200px;
+}
+
+.img:hover {
+  cursor: pointer;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 12px;
+  -webkit-box-shadow: 5px 5px 10px 0px #000000;
+  -moz-box-shadow: 5px 5px 10px 0px #000000;
+  -o-box-shadow: 5px 5px 10px 0px #000000;
+  box-shadow: 5px 5px 10px 0px #000000;
+}
+
+.card_title {
+  margin: 0px;
+  font-weight: 1000;
+  border-bottom: 1px solid black;
+  padding: 15px;
+  background-color: white;
+  border-radius: 12px 12px 0px 0px;
+}
+
+.traduction {
+  margin: 0px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 0px 0px 12px 12px;
+  font-weight: 600;
+  border-top: 1px solid black;
+}
+
+@media (max-width: 1200px) {
+
+  .img_div {
+    transform: scale(1.20);
+    margin-top: 20vh;
+  }
+
+}
