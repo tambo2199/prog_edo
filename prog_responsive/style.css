@@ -1,0 +1,94 @@
+.titolo p {
+  padding: 0px 0px 5vh 0px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 60px;
+  color: white;
+  text-shadow: 4px 4px 0 #000000;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.562);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  background: #1c92d2;
+  background: #3881ff;
+  background: radial-gradient(at left top, #3881ff, #48ffe3);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0px 0px 200px 0px;
+}
+
+.img_div {
+  padding: 3vh 0px;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-around;
+  row-gap: 5vh;
+  margin: 0px 5vw;
+}
+
+.img {
+  width: 300px;
+  height: 300px;
+}
+
+.img:hover {
+  cursor: pointer;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 12px;
+  -webkit-box-shadow: 5px 5px 10px 0px #000000;
+  -moz-box-shadow: 5px 5px 10px 0px #000000;
+  -o-box-shadow: 5px 5px 10px 0px #000000;
+  box-shadow: 5px 5px 10px 0px #000000;
+}
+
+.card:hover{
+  animation: focus 0.2s linear forwards;
+}
+
+@keyframes focus{
+  from{}
+  to{transform: scale(1.03);}
+}
+
+.card_title {
+  margin: 0px;
+  font-weight: 1000;
+  border-bottom: 2px solid black;
+  padding: 15px;
+  background-color: white;
+  border-radius: 12px 12px 0px 0px;
+}
+
+.traduction {
+  margin: 0px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 0px 0px 12px 12px;
+  font-weight: 600;
+  border-top: 2px solid black;
+}
+
+@media (width<1490px) {
+  .img_div {
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    column-gap: 5vw;
+  }
+
+  @media (width<725px) {
+    .img_div {
+      grid-template-rows: auto auto auto auto auto auto auto;
+      grid-template-columns: auto;
+    }
+}
